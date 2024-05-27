@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = () => {
     //프로미스 방법
-    fetch("http://localhost:3001/web")
+    fetch("http://localhost:3001/web") // db.json을로 json-server로 3001번 포트로 연결
       .then((response) => response.json())
       .then((result) => {
         localStorage.setItem("webData", JSON.stringify(result));
